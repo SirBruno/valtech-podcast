@@ -2,7 +2,7 @@
   background: url('../public/heroBackground.jpg');
   background-position: center;
   background-size: cover;
-  box-shadow:inset 0 0 0 2000px rgba(255, 255, 255, 0.9);
+  box-shadow: inset 0 0 0 2000px rgba(255, 255, 255, 0.9);
 }
 
 .ValtechLogoBlack {
@@ -53,7 +53,7 @@
   align-items: center;
 }
 
-.backgroundTitle {
+.container .backgroundTitle {
   font-size: 175px;
   font-weight: 800;
   position: absolute;
@@ -64,7 +64,7 @@
   margin-bottom: 5%;
 }
 
-.title {
+.container .title {
   font-size: 75px;
   margin: 0 0 20px 0;
   display: block;
@@ -74,7 +74,7 @@
   position: relative;
 }
 
-.blueLine {
+.container .blueLine {
   content: '';
   height: 2px;
   background: blue;
@@ -101,4 +101,135 @@
   width: 650px;
   height: 100%;
   opacity: .8;
+}
+
+.sectionTwo {
+  display: grid;
+  height: 100vh;
+  text-align: center;
+  align-items: center;
+  position: relative;
+}
+
+.sectionTwo .backgroundTitle {
+  font-size: 175px;
+  font-weight: 800;
+  position: absolute;
+  top: 7.5%;
+  width: 100%;
+  color: #000;
+  z-index: 0;
+  opacity: .1;
+}
+
+.sectionTwo .title {
+  font-size: 100px;
+  margin: 0 0 20px 0;
+  display: block;
+  text-transform: capitalize;
+  font-weight: 800;
+  z-index: 1;
+  position: relative;
+}
+
+.sectionTwo .blueLine {
+  content: '';
+  height: 2px;
+  background: blue;
+  width: 675px;
+  display: block;
+  border: 2px solid #5CD0FE;
+  margin: 15px auto 0;
+  z-index: 1;
+  position: relative;
+}
+
+.sectionTwo .blueCircle {
+  top: 10%;
+  left: 10%;
+  width: 575px;
+  height: 575px;
+  background: #5DD1FF 0% 0% no-repeat padding-box;
+  opacity: 1;
+  position: absolute;
+  border-radius: 100%;
+}
+
+.sectionTwo .episodeFilter {
+  z-index: 1;
+  position: relative;
+  margin-top: 30px;
+}
+
+.sectionTwo .episodeFilter a {
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 16px;
+  letter-spacing: 1.5px;
+}
+
+.sectionTwo .episodeFilter a:not(:last-child) {
+  padding-right: 20px;
+}
+
+.sectionTwo .episodeCards {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  max-width: 1280px;
+  margin: 50px auto 0;
+  grid-column-gap: 30px;
+}
+
+.sectionTwo .episodeCards > div {
+  background: #fff;
+  box-shadow: 0px 0px 20px #0000002A;
+  padding: 35px;
+  border-radius: 5px;
+  text-align: left;
+  display: grid;
+}
+
+.sectionTwo .episodeCards > div h3 {
+  margin: 0;
+  text-transform: uppercase;
+  font-size: 34px;
+  font-weight: 300;
+  line-height: 40px;
+}
+
+.sectionTwo .episodeCards > div p {
+  font-weight: bold;
+  margin: 20px 0 10px;
+}
+
+.sectionTwo .episodeCards > div > div:first-child > span {
+  opacity: .5;
+}
+
+.sectionTwo .episodeCards > div > div:nth-child(2) {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.sectionTwo .episodeCards > div > div:nth-child(2) span {
+  display: grid;
+}
+
+.sectionTwo .outlinedBtn {
+  background: #fff;
+  padding: 20px 45px;
+  color: #000;
+  text-transform: uppercase;
+  display: inline-block;
+  letter-spacing: 1.5px;
+  z-index: 1;
+  position: relative;
+  font-weight: 700;
+  box-sizing: border-box;
+  border: 2px solid #000;
+  margin-top: 100px;
 }
