@@ -86,7 +86,7 @@
   position: relative;
 }
 
-.rectangleLines {
+.container .rectangleLines {
   position: absolute;
   bottom: 200px;
   left: -150px;
@@ -182,7 +182,7 @@
   grid-column-gap: 30px;
 }
 
-.sectionTwo .episodeCards > div {
+.sectionTwo .episodeCards>div {
   background: #fff;
   box-shadow: 0px 0px 20px #0000002A;
   padding: 35px;
@@ -191,7 +191,7 @@
   display: grid;
 }
 
-.sectionTwo .episodeCards > div h3 {
+.sectionTwo .episodeCards>div h3 {
   margin: 0;
   text-transform: uppercase;
   font-size: 34px;
@@ -199,23 +199,23 @@
   line-height: 40px;
 }
 
-.sectionTwo .episodeCards > div p {
+.sectionTwo .episodeCards>div p {
   font-weight: bold;
   margin: 20px 0 10px;
 }
 
-.sectionTwo .episodeCards > div > div:first-child > span {
+.sectionTwo .episodeCards>div>div:first-child>span {
   opacity: .5;
 }
 
-.sectionTwo .episodeCards > div > div:nth-child(2) {
+.sectionTwo .episodeCards>div>div:nth-child(2) {
   margin-top: 20px;
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
 }
 
-.sectionTwo .episodeCards > div > div:nth-child(2) span {
+.sectionTwo .episodeCards>div>div:nth-child(2) span {
   display: grid;
 }
 
@@ -240,7 +240,7 @@
   position: relative;
 }
 
-.sectionThree > section {
+.sectionThree>section {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-column-gap: 100px;
@@ -251,12 +251,12 @@
   margin: 0 auto;
 }
 
-.sectionThree > section > div:first-child {
+.sectionThree>section>div:first-child {
   text-align: left;
   position: relative;
 }
 
-.sectionThree > section > div h2 {
+.sectionThree>section>div h2 {
   font-size: 100px;
   line-height: 100px;
   margin: 0 0 20px 0;
@@ -267,7 +267,7 @@
   position: relative;
 }
 
-.sectionThree > section > div .blueLine {
+.sectionThree>section>div .blueLine {
   content: '';
   height: 2px;
   background: blue;
@@ -279,15 +279,15 @@
   position: relative;
 }
 
-.sectionThree > section > div p {
+.sectionThree>section>div p {
   font-size: 18px;
   line-height: 28px;
   opacity: .75;
   padding-right: 25%;
-  font-weight: 300;
+  font-weight: 400;
 }
 
-.sectionThree > section > div:last-child {
+.sectionThree>section>div:last-child {
   margin: 0 auto;
 }
 
@@ -311,4 +311,139 @@
   z-index: 0;
   top: -40%;
   left: -20%;
+}
+
+/* SECTION FOUR */
+.sectionFour {
+  height: 100vh;
+  position: relative;
+}
+
+.sectionFour>section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 100px;
+  align-items: center;
+  height: 100vh;
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.sectionFour>section>div h2 {
+  font-size: 100px;
+  line-height: 100px;
+  margin: 0 0 20px 0;
+  display: block;
+  text-transform: capitalize;
+  font-weight: 800;
+  z-index: 1;
+  position: relative;
+}
+
+.sectionFour .backgroundTitle {
+  font-size: 200px;
+  line-height: 200px;
+  font-weight: 800;
+  position: absolute;
+  width: 100%;
+  color: #fff;
+  z-index: 1;
+  opacity: .25;
+}
+
+.sectionFour>section>div p {
+  font-size: 18px;
+  line-height: 28px;
+  padding-right: 25%;
+  font-weight: 400;
+}
+
+.sectionFour>section>div .blueLine {
+  content: '';
+  height: 2px;
+  background: blue;
+  width: 50%;
+  display: block;
+  border: 2px solid #5CD0FE;
+  margin: 0;
+  z-index: 1;
+  position: relative;
+}
+
+.sectionFour>section>div:first-child>div {
+  position: absolute;
+  bottom: 15%;
+  left: 3%;
+}
+
+.sectionFour>section>div:first-child>div p {
+  margin: 0 0 5px 0;
+  z-index: 2;
+  position: relative;
+}
+
+.sectionFour>section>div:first-child>div h2,
+.sectionFour>section>div:first-child>div .blueLine {
+  z-index: 2;
+  position: relative;
+}
+
+.sectionFour .oval3 {
+  position: absolute;
+  color: #fff;
+  z-index: 1;
+  bottom: 0;
+  width: 160%;
+  height: 150%;
+  left: -27%;
+  bottom: -36%;
+  transform: rotate(7deg);
+}
+
+.sectionFour>section>div:first-child .rectangleLines {
+  position: absolute;
+  bottom: 200px;
+  width: 450px;
+  height: 184px;
+  right: -70%;
+  bottom: -23%;
+  z-index: 1;
+}
+
+.sectionFour .oval4 {
+  position: absolute;
+  width: 150%;
+  height: 160%;
+  color: #fff;
+  z-index: 0;
+  bottom: -23%;
+  left: -45%;
+}
+
+.sectionFour>section>div:last-child {
+  position: relative;
+}
+
+.sectionFour>section>div:last-child p {
+  position: relative;
+  z-index: 1;
+}
+
+.sectionFour>section>div:last-child h2 {
+  position: relative;
+  z-index: 2;
+}
+
+.sectionFour .person2 {
+  position: relative;
+  z-index: 1;
+}
+
+.sectionFour>section>div:last-child .rectangleLines {
+  position: absolute;
+  bottom: 200px;
+  width: 450px;
+  height: 184px;
+  z-index: 1;
+  left: -55%;
 }
