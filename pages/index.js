@@ -10,14 +10,17 @@ import oval from '../public/oval.svg'
 export default function Home() {
   return (
     <div className={styles.container}>
+      <Head>
+        <title>Valtech Podcast</title>
+      </Head>
       <FontAwesomeIcon className={styles.menuBtn} icon={faBars} />
       <main className={styles.main}>
         <span className={styles.backgroundTitle}>Podcast</span>
         <div className={styles.rectangleLines}>
-          <Image src={rectangleLines} quality="100" layout='fill' objectFit='contain' />
+          <Image src={rectangleLines} alt="design element" quality="100" layout='fill' objectFit='contain' />
         </div>
         <div className={styles.oval}>
-          <Image src={oval} quality="100" layout='fill' objectFit='contain' />
+          <Image src={oval} alt="design element" quality="100" layout='fill' objectFit='contain' />
         </div>
         <div>
           <div style={{ width: '100%', height: '80px', position: 'relative' }}>
