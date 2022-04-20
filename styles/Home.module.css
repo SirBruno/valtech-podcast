@@ -1,3 +1,11 @@
+.mobileOnly {
+  display: none;
+}
+
+.desktopOnly {
+  display: inline-block;
+}
+
 .container {
   background: url('../public/heroBackground.jpg');
   background-position: center;
@@ -7,6 +15,12 @@
 
 .ValtechLogoBlack {
   border: 2px solid red;
+}
+
+.ValtechLogoBlackContainer {
+  width: 100%;
+  height: 80px;
+  position: relative;
 }
 
 .blackBtn {
@@ -234,6 +248,8 @@
   margin-top: 100px;
 }
 
+/* SECTION 3 */
+
 .sectionThree {
   background: #111;
   height: 100vh;
@@ -311,6 +327,12 @@
   z-index: 0;
   top: -40%;
   left: -20%;
+}
+
+.sectionThree div.person1 {
+  width: 550px;
+  height: 100%;
+  position: relative;
 }
 
 /* SECTION FOUR */
@@ -446,6 +468,12 @@
   height: 184px;
   z-index: 1;
   left: -55%;
+}
+
+.sectionFour div.person2 {
+  width: 550px;
+  height: 100%;
+  position: relative;
 }
 
 /* SECTION FIVE */
@@ -588,4 +616,566 @@
 
 .sectionFive .episodeFilter a:not(:last-child) {
   padding-right: 20px;
+}
+
+/* MEDIA QUERIES */
+
+@media screen and (max-width: 320px) {
+  .mobileOnly {
+    display: block;
+  }
+
+  .desktopOnly {
+    display: none;
+  }
+
+  /* SECTION 1 */
+
+  .main {
+    height: auto;
+    padding: 50% 0;
+  }
+
+  .container {
+    background: none;
+  }
+
+  .container .ValtechLogoBlackContainer {
+    height: 40px;
+    margin: 0 auto;
+  }
+
+  .container .backgroundTitle {
+    font-size: 75px;
+    font-weight: 800;
+    position: absolute;
+    top: 17.5%;
+    width: 100%;
+    color: #000;
+    z-index: 0;
+    opacity: .1;
+    margin-bottom: 5%;
+    display: none;
+  }
+
+  .container .title {
+    font-size: 35px;
+    margin: 0 0 20px 0;
+    display: block;
+    text-transform: capitalize;
+    font-weight: 300;
+    z-index: 1;
+    position: relative;
+  }
+
+  .container .blueLine {
+    content: '';
+    height: 2px;
+    background: blue;
+    width: 125px;
+    display: block;
+    border: 2px solid #5CD0FE;
+    margin: 15px auto 0;
+    z-index: 1;
+    position: relative;
+  }
+
+  .container .rectangleLines {
+    display: none;
+  }
+
+  /* FIX THIS LATER! */
+  .oval {
+    position: absolute;
+    bottom: 0;
+    right: -20%;
+    width: 450px;
+    height: 100%;
+    opacity: .8;
+    display: none;
+  }
+
+  /* SECTION 2 */
+
+  .sectionTwo .blueCircle {
+    display: none;
+  }
+
+  .sectionTwo .title {
+    font-size: 50px;
+    line-height: 50px;
+    margin: 0 0 20px 0;
+    display: block;
+    text-transform: capitalize;
+    font-weight: 800;
+    z-index: 1;
+    position: relative;
+    text-align: left;
+    padding: 0 20px;
+  }
+
+  .sectionTwo .backgroundTitle {
+    font-size: 65px;
+    font-weight: 800;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    color: #000;
+    z-index: 0;
+    opacity: .1;
+    text-transform: capitalize;
+    left: -4%;
+    display: none;
+  }
+
+  .sectionTwo .blueLine {
+    content: '';
+    height: 2px;
+    background: blue;
+    width: 200px;
+    display: block;
+    border: 2px solid #5CD0FE;
+    margin: 10px 20px;
+    z-index: 1;
+    position: relative;
+  }
+
+  .sectionTwo .episodeFilter {
+    display: none;
+  }
+
+  .scrollIcons {
+    display: none;
+  }
+
+  .sectionTwo .episodeCards {
+    padding: 20px;
+    overflow-x: scroll;
+    max-width: 320px;
+    grid-auto-flow: column;
+    grid-auto-columns: minmax(300px, 1fr);
+    grid-template-columns: none;
+  }
+
+  .sectionTwo .episodeCards>div h3 {
+    font-size: 30px;
+    line-height: 34px;
+  }
+
+  .sectionTwo .episodeCards>div p {
+    margin: 20px 0 5px;
+  }
+
+  .sectionTwo .episodeCards>div>div:first-child>span {
+    opacity: .5;
+  }
+
+  .sectionTwo .episodeCards>div>div:nth-child(2) {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+
+  /* SECTION 3 */
+
+  .sectionThree {
+    background: #111;
+    height: auto;
+    position: relative;
+  }
+
+  .sectionThree>section {
+    display: block;
+    color: #fff;
+    align-items: center;
+    height: auto;
+    margin: 0 auto;
+    padding: 50px 0;
+  }
+
+  .sectionThree>section>div:first-child {
+    text-align: left;
+    position: relative;
+  }
+
+  .sectionThree>section>div h2 {
+    font-size: 50px;
+    line-height: 50px;
+    margin: 0 0 20px 0;
+    display: block;
+    text-transform: capitalize;
+    font-weight: 800;
+    z-index: 1;
+    position: relative;
+    padding: 20px;
+  }
+
+  .sectionThree>section>div .blueLine {
+    content: '';
+    height: 2px;
+    background: blue;
+    width: 50%;
+    display: block;
+    border: 2px solid #5CD0FE;
+    margin: 30px 20px 20px;
+    z-index: 1;
+    position: relative;
+  }
+
+  .sectionThree>section>div p {
+    font-size: 18px;
+    line-height: 28px;
+    opacity: .75;
+    padding-right: 25%;
+    font-weight: 400;
+    padding: 0 20px;
+  }
+
+  .sectionThree>section>div:last-child {
+    margin: 0 auto;
+  }
+
+  .sectionThree .backgroundTitle {
+    font-size: 65px;
+    line-height: 65px;
+    font-weight: 800;
+    position: absolute;
+    width: 100%;
+    color: #fff;
+    z-index: 1;
+    opacity: .1;
+    top: 0;
+    left: 0;
+    padding: 20px;
+    display: none;
+  }
+
+  .sectionThree .oval2 {
+    display: none;
+  }
+
+  .sectionThree div.person1 {
+    width: auto !important;
+    height: 450px;
+    position: relative;
+    margin: 20px !important;
+  }
+
+  /* SECTION FOUR */
+  .sectionFour {
+    height: auto;
+    position: relative;
+  }
+
+  .sectionFour>section {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-column-gap: 0;
+    align-items: center;
+    height: auto;
+    max-width: 100%;
+    margin: 0 auto;
+  }
+
+  .sectionFour>section>div h2 {
+    font-size: 50px;
+    line-height: 50px;
+    margin: 0 0 20px 0;
+    display: block;
+    text-transform: capitalize;
+    font-weight: 800;
+    z-index: 1;
+    position: relative;
+  }
+
+  .sectionFour .backgroundTitle {
+    font-size: 75px;
+    line-height: 75px;
+    font-weight: 800;
+    position: absolute;
+    width: 100%;
+    color: #fff;
+    z-index: 1;
+    opacity: .25;
+    display: none;
+  }
+
+  .sectionFour>section>div p {
+    font-size: 18px;
+    line-height: 28px;
+    padding-right: 25%;
+    font-weight: 400;
+    display: none;
+  }
+
+  .sectionFour>section>div .blueLine {
+    content: '';
+    height: 2px;
+    background: blue;
+    width: 100%;
+    display: block;
+    border: 2px solid #5CD0FE;
+    margin: 0;
+    z-index: 1;
+    position: relative;
+  }
+
+  .sectionFour>section>div:first-child>div {
+    position: absolute;
+    bottom: -10%;
+    left: 3%;
+    padding: 20px;
+    width: 100%;
+    display: none;
+  }
+
+  .sectionFour>section>div:first-child>div p {
+    margin: 0 0 5px 0;
+    z-index: 2;
+    position: relative;
+    display: block
+  }
+
+  .sectionFour>section>div:first-child>div h2,
+  .sectionFour>section>div:first-child>div .blueLine {
+    z-index: 2;
+    position: relative;
+  }
+
+  .sectionFour .oval3 {
+    position: absolute;
+    color: #fff;
+    z-index: 1;
+    bottom: 0;
+    width: 141%;
+    height: 126%;
+    left: -22%;
+    bottom: -13%;
+    transform: rotate(1deg);
+    display: none;
+  }
+
+  .sectionFour>section>div:first-child .rectangleLines {
+    position: absolute;
+    bottom: 200px;
+    width: 450px;
+    height: 184px;
+    right: -70%;
+    bottom: -23%;
+    z-index: 1;
+    display: none;
+  }
+
+  .sectionFour .oval4 {
+    position: absolute;
+    width: 150%;
+    height: 160%;
+    color: #fff;
+    z-index: 0;
+    bottom: -23%;
+    left: -45%;
+    display: none;
+    display: none;
+  }
+
+  .sectionFour .oval5 {
+    width: 170%;
+    height: 350%;
+    position: absolute;
+    top: -104%;
+    left: -30%;
+    display: none;
+  }
+
+  .sectionFour>section>div:last-child {
+    grid-row-start: 1;
+    padding: 0 20px;
+  }
+
+  .sectionFour>section>div:last-child p {
+    position: relative;
+    z-index: 1;
+  }
+
+  .sectionFour>section>div:last-child h2 {
+    position: relative;
+    z-index: 2;
+  }
+
+  .sectionFour .person2 {
+    position: relative;
+    z-index: 1;
+  }
+
+  .sectionFour>section>div:last-child .rectangleLines {
+    position: absolute;
+    width: 450px;
+    height: 184px;
+    z-index: 1;
+    left: -100%;
+    bottom: -20%;
+    display: none;
+  }
+
+  .sectionFour div.person2 {
+    width: auto !important;
+    height: 450px;
+    position: relative;
+    margin: 20px !important;
+  }
+
+  /* SECTION FIVE */
+
+  .sectionFive {
+    background: #111;
+    color: #fff;
+    padding: 100px 0;
+    text-align: center;
+  }
+
+  .sectionFive>section {
+    position: relative;
+  }
+
+  .sectionFive .backgroundTitle {
+    font-size: 60px;
+    line-height: 60px;
+    font-weight: 800;
+    position: absolute;
+    width: 100%;
+    color: #fff;
+    z-index: 1;
+    opacity: .1;
+    left: 0;
+    top: -7.5%;
+    display: none;
+  }
+
+  .sectionFive h2 {
+    font-size: 50px;
+    line-height: 50px;
+    margin: 0 0 20px 20px;
+    display: block;
+    text-transform: capitalize;
+    font-weight: 800;
+    z-index: 1;
+    position: relative;
+    text-align: left;
+  }
+
+  .sectionFive p {
+    font-size: 18px;
+    line-height: 28px;
+    opacity: .75;
+    font-weight: 400;
+    text-align: left;
+    padding: 20px;
+  }
+
+  .sectionFive .blueLine:nth-child(3) {
+    content: '';
+    height: 2px;
+    background: blue;
+    width: 450px;
+    display: block;
+    border: 2px solid #5CD0FE;
+    margin: 0 auto 30px;
+    z-index: 1;
+    position: relative;
+    display: none;
+  }
+
+  .sectionFive .blueLine:nth-child(10) {
+    content: '';
+    height: 2px;
+    background: blue;
+    width: 150px;
+    display: block;
+    border: 1px solid #5CD0FE;
+    margin: 20px auto 30px;
+    z-index: 1;
+    position: relative;
+    display: none;
+  }
+
+  .sectionFive .subscribeInput {
+    display: block;
+    margin: 20px;
+  }
+
+  .sectionFive .subscribeInput input::placeholder {
+    font-size: 16px;
+    font-weight: 500;
+    text-align: center;
+  }
+
+  .sectionFive .subscribeInput input {
+    border: none;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    font-family: 'Open Sans', sans-serif;
+    box-sizing: border-box;
+    padding: 20px 0;
+    outline: none;
+    font-size: 16px;
+    font-weight: 500;
+    width: 100%;
+  }
+
+  .sectionFive .subscribeInput button {
+    margin-top: 20px;
+    border: none;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    box-sizing: border-box;
+    padding: 20px 0;
+    background: #5CD0FE;
+    text-transform: uppercase;
+    width: 100%;
+  }
+
+  /* FIX THIS LATER! */
+  .sectionFive .faEnvelope {
+    display: none;
+  }
+
+  .sectionFive .divider {
+    content: '';
+    height: 2px;
+    background: blue;
+    width: 850px;
+    display: block;
+    border: 1px solid #333;
+    margin: 100px auto 100px;
+    z-index: 1;
+    position: relative;
+    display: none;
+  }
+
+  .sectionFive .episodeFilter {
+    margin-bottom: 100px;
+    margin-top: 100px;
+  }
+
+  .sectionFive .episodeFilter a {
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 16px;
+    letter-spacing: 1.5px;
+    display: block;
+    text-align: center;
+  }
+
+  .sectionFive .episodeFilter a:not(:last-child) {
+    padding-right: 0;
+    margin-bottom: 30px;
+  }
+
+  .sectionFive .copyrightText {
+    text-align: center;
+  }
 }
