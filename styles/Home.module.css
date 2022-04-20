@@ -447,3 +447,145 @@
   z-index: 1;
   left: -55%;
 }
+
+/* SECTION FIVE */
+
+.sectionFive {
+  background: #111;
+  color: #fff;
+  padding: 250px 0;
+  text-align: center;
+}
+
+.sectionFive>section {
+  position: relative;
+}
+
+.sectionFive .backgroundTitle {
+  font-size: 200px;
+  line-height: 200px;
+  font-weight: 800;
+  position: absolute;
+  width: 100%;
+  color: #fff;
+  z-index: 1;
+  opacity: .1;
+  left: 0;
+  top: -7.5%;
+}
+
+.sectionFive h2 {
+  font-size: 100px;
+  line-height: 100px;
+  margin: 0 0 20px 0;
+  display: block;
+  text-transform: capitalize;
+  font-weight: 800;
+  z-index: 1;
+  position: relative;
+}
+
+.sectionFive p {
+  font-size: 18px;
+  line-height: 28px;
+  opacity: .75;
+  font-weight: 400;
+}
+
+.sectionFive .blueLine:nth-child(3) {
+  content: '';
+  height: 2px;
+  background: blue;
+  width: 450px;
+  display: block;
+  border: 2px solid #5CD0FE;
+  margin: 0 auto 30px;
+  z-index: 1;
+  position: relative;
+}
+
+.sectionFive .blueLine:nth-child(10) {
+  content: '';
+  height: 2px;
+  background: blue;
+  width: 150px;
+  display: block;
+  border: 1px solid #5CD0FE;
+  margin: 20px auto 30px;
+  z-index: 1;
+  position: relative;
+}
+
+.sectionFive .subscribeInput {
+  margin-top: 40px;
+  display: inline-flex;
+  justify-content: center;
+  position: relative;
+}
+
+.sectionFive .subscribeInput input::placeholder {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.sectionFive .subscribeInput input {
+  border: none;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  font-family: 'Open Sans', sans-serif;
+  box-sizing: border-box;
+  padding: 20px 50px;
+  outline: none;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.sectionFive .subscribeInput button {
+  border: none;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  box-sizing: border-box;
+  padding: 20px 50px;
+  background: #5CD0FE;
+  text-transform: uppercase;
+}
+
+.sectionFive .faEnvelope {
+  position: absolute;
+  left: 20px;
+  display: grid;
+  align-self: center;
+  display: block;
+  color: #000;
+  font-size: 18px;
+}
+
+.sectionFive .divider {
+  content: '';
+  height: 2px;
+  background: blue;
+  width: 850px;
+  display: block;
+  border: 1px solid #333;
+  margin: 100px auto 100px;
+  z-index: 1;
+  position: relative;
+}
+
+.sectionFive .episodeFilter {
+  margin-bottom: 100px;
+}
+
+.sectionFive .episodeFilter a {
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 16px;
+  letter-spacing: 1.5px;
+}
+
+.sectionFive .episodeFilter a:not(:last-child) {
+  padding-right: 20px;
+}
