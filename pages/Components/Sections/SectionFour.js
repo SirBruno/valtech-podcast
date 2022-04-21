@@ -11,7 +11,7 @@ function SectionFour() {
     <section>
       <div>
         <div className={styles.person2}>
-          <Image className={styles.person2} src={person2} alt="Young woman" quality="100" layout='responsive' objectFit='contain' />
+          <Image src={person2} alt="Young woman" quality="100" layout='responsive' objectFit='contain' />
         </div>
         <div className={styles.personTitle}>
           <p>Fake Company CTO</p>
@@ -38,7 +38,7 @@ function SectionFour() {
           </div>
         </div>
         <div className={styles.rectangleLines}>
-          <Image src={rectangleLines} alt="design element" quality="100" layout='fill' objectFit='contain' />
+          <Image src={rectangleLines} alt="design element" quality="100" layout='responsive' objectFit='contain' />
         </div>
       </div>
     </section>
