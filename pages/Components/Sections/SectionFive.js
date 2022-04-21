@@ -10,7 +10,7 @@ function SectionFive() {
             <span className={styles.backgroundTitle}>Subscribe</span>
             <h2 className={`${styles.titleLarge}`}>Subscribe</h2>
             <span className={styles.blueLine}></span>
-            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.<br />Donec nec justo eget felis facilisis fermentum. Aliquam porttitor mauris sit amet orci.</p>
+            <p>Subscribe to our newsletter, to be always aware of our company events.<br />We build the most powerful and flexible tools for internet commerce.</p>
             <div className={styles.subscribeInput}>
                 <FontAwesomeIcon className={styles.faEnvelope} icon={faEnvelope} />
                 <input type="email" placeholder="Type your email" />
@@ -19,8 +19,8 @@ function SectionFive() {
             <br />
             <br />
             <span className={styles.divider}></span>
-            <div style={{ width: '100%', height: '40px', position: 'relative' }}>
-                <Image className={styles.ValtechLogoWhite} src={ValtechLogoWhite} alt="Young man" quality="100" layout='fill' objectFit='contain' />
+            <div className={styles.ValtechLogoWhite}>
+                <Image src={ValtechLogoWhite} alt="Young man" quality="100" layout='responsive' objectFit='contain' />
             </div>
             <span className={styles.blueLine}></span>
             <div className={styles.episodeFilter}>

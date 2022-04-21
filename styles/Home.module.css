@@ -79,6 +79,7 @@
   font-size: 20px;
   transition: .3s;
   z-index: 1;
+  color: #fff;
 }
 
 .menuBtn:hover {
@@ -99,72 +100,78 @@
 
 .container {
   background: url('../public/heroBackground.jpg');
-  background-position: center;
+  background-position: right;
   background-size: cover;
-  box-shadow: inset 0 0 0 2000px rgba(255, 255, 255, 0.9);
 }
 
 .ValtechLogoBlack {
-  border: 2px solid red;
+  margin: 0 auto 16px;
+  width: 362px;
+  height: 74px;
 }
 
 .ValtechLogoBlackContainer {
-  width: 100%;
-  height: 80px;
   position: relative;
 }
 
 .blackBtn {
   background: #000;
-  padding: 20px 45px;
+  width: 186px;
+  height: 60px;
+  box-shadow: 0px 0px 34px #0000001a;
   color: #fff;
   text-transform: uppercase;
-  display: inline-block;
-  letter-spacing: 1.5px;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: 1px;
   z-index: 1;
   position: relative;
   font-weight: 600;
-}
-
-.scrollIcons {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
+  display: flex;
+  margin: 0 auto;
+  align-items: center;
+  justify-content: center;
 }
 
 .scrollIcons svg:first-child {
-  font-size: 20px;
-  display: block;
-  margin: 0 auto;
+  font-size: 24px;
+  position: absolute;
+  top: 1010px;
+  width: 100%;
 }
 
 .scrollIcons svg:nth-child(2) {
-  font-size: 15px;
-  display: block;
-  margin: 10px auto 0;
+  top: 1053px;
+  font-size: 12px;
+  position: absolute;
+  width: 100%;
 }
 
 .main {
   display: grid;
-  height: 100vh;
+  height: 1080px;
   text-align: center;
   align-items: center;
+  position: relative;
 }
 
 .container .backgroundTitle {
-  font-size: 175px;
+  font-size: 200px;
+  line-height: 273px;
+  letter-spacing: -10px;
   font-weight: 800;
   position: absolute;
   width: 100%;
-  color: #000;
+  top: 376px;
+  color: #EEEEEE;
   z-index: 0;
-  opacity: .1;
-  margin-bottom: 5%;
 }
 
 .container .title {
-  font-size: 75px;
-  margin: 0 0 20px 0;
+  font-size: 59px;
+  line-height: 75px;
+  letter-spacing: 2.95px;
+  margin: 0 0 16px 0;
   display: block;
   text-transform: capitalize;
   font-weight: 300;
@@ -174,54 +181,67 @@
 
 .container .blueLine {
   content: '';
-  height: 2px;
+  height: 4px;
   background: blue;
-  width: 275px;
+  width: 242px;
   display: block;
-  border: 2px solid #5CD0FE;
-  margin: 15px auto 0;
+  background: #5CD0FE;
+  margin: 0 auto 4px;
   z-index: 1;
   position: relative;
 }
 
 .container .rectangleLines {
   position: absolute;
-  bottom: 200px;
-  left: -150px;
-  width: 450px;
-  height: 184px;
+  top: 616px;
+  left: -31.000015258789062px;
+  width: 534px;
+  height: 241px;
 }
 
 .oval {
   position: absolute;
-  bottom: 0;
-  right: -20%;
-  width: 650px;
-  height: 100%;
+  top: 578px;
+  left: 1658px;
+  width: 538px;
+  height: 436px;
   opacity: .8;
 }
 
+.container .oval6 {
+  position: absolute;
+  top: -197px;
+  width: 506px;
+  height: 410px;
+  left: -260px;
+}
+
 .sectionTwo {
+  background: #f9f9f9;
   display: grid;
-  height: 100vh;
+  height: 1080px;
   text-align: center;
   align-items: center;
-  position: relative;
 }
 
 .sectionTwo .backgroundTitle {
-  font-size: 175px;
+  font-size: 200px;
+  line-height: 273px;
+  letter-spacing: -10px;
   font-weight: 800;
   position: absolute;
-  top: 7.5%;
+  top: 1211px;
   width: 100%;
-  color: #000;
+  color: #F0F0F0;
   z-index: 0;
-  opacity: .1;
 }
 
 .sectionTwo .title {
-  margin: 0 0 20px 0;
+  font-size: 80px;
+  line-height: 109px;
+  letter-spacing: -4px;
+  color: #111;
+  margin: 0 0 8px 0;
   display: block;
   z-index: 1;
   position: relative;
@@ -229,21 +249,20 @@
 
 .sectionTwo .blueLine {
   content: '';
-  height: 2px;
-  background: blue;
-  width: 675px;
+  height: 4px;
+  width: 500px;
   display: block;
-  border: 2px solid #5CD0FE;
-  margin: 15px auto 0;
+  margin: 0 auto 28px;
+  background: #5CD0FE;
   z-index: 1;
   position: relative;
 }
 
 .sectionTwo .blueCircle {
-  top: 10%;
-  left: 10%;
-  width: 575px;
-  height: 575px;
+  top: 1225px;
+  left: 370px;
+  width: 554px;
+  height: 554px;
   background: #5DD1FF 0% 0% no-repeat padding-box;
   opacity: 1;
   position: absolute;
@@ -253,58 +272,76 @@
 .sectionTwo .episodeFilter {
   z-index: 1;
   position: relative;
-  margin-top: 30px;
 }
 
 .sectionTwo .episodeFilter a {
   font-weight: 700;
   text-transform: uppercase;
-  font-size: 16px;
-  letter-spacing: 1.5px;
+  font-size: 15px;
+  line-height: 20px;
+  letter-spacing: 2.31px;
+  color: #111;
+  padding-bottom: 11px;
+  transition: .3s;
+  border-bottom: 2px solid transparent;
+  margin-bottom: 32px;
+  display: inline-block;
 }
 
 .sectionTwo .episodeFilter a:not(:last-child) {
-  padding-right: 20px;
+  margin-right: 32px;
+}
+
+.sectionTwo .episodeFilter a:hover {
+  border-bottom: 2px solid #111;
+  cursor: pointer;
+  transition: .3s;
 }
 
 .sectionTwo .episodeCards {
   position: relative;
   z-index: 1;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: repeat(4, 262px);
   max-width: 1280px;
-  margin: 50px auto 0;
-  grid-column-gap: 30px;
+  margin: 0 auto 76px;
+  grid-column-gap: 32px;
 }
 
 .sectionTwo .episodeCards>div {
   background: #fff;
-  box-shadow: 0px 0px 20px #0000002A;
-  padding: 35px;
-  border-radius: 5px;
+  box-shadow: 0px 0px 20px #0000001A;
+  padding: 32px;
+  border-radius: 4px;
   text-align: left;
   display: grid;
 }
 
 .sectionTwo .episodeCards>div h3 {
-  margin: 0;
+  margin: 0 0 8px 0;
   text-transform: uppercase;
-  font-size: 34px;
+  font-size: 28px;
   font-weight: 300;
-  line-height: 40px;
+  line-height: 32px;
+  color: #000;
 }
 
 .sectionTwo .episodeCards>div p {
   font-weight: bold;
-  margin: 20px 0 10px;
+  margin: 0 0 4px 0;
+  font-size: 16px;
+  line-height: 16px;
+  color: #000;
 }
 
 .sectionTwo .episodeCards>div>div:first-child>span {
-  opacity: .5;
+  color: #777777;
+  font-size: 13px;
+  line-height: 13px;
 }
 
 .sectionTwo .episodeCards>div>div:nth-child(2) {
-  margin-top: 20px;
+  margin-top: 36px;
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
@@ -316,24 +353,31 @@
 
 .sectionTwo .outlinedBtn {
   background: #fff;
-  padding: 20px 45px;
-  color: #000;
+  width: 146px;
+  height: 50px;
+  box-shadow: 0px 1px 30px #00000000;
+  color: #111;
   text-transform: uppercase;
-  display: inline-block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   letter-spacing: 1.5px;
   z-index: 1;
   position: relative;
+  font-size: 13px;
+  line-height: 18px;
+  letter-spacing: 1px;
   font-weight: 700;
   box-sizing: border-box;
   border: 2px solid #000;
-  margin-top: 100px;
+  margin: 0 auto;
 }
 
 /* SECTION 3 */
 
 .sectionThree {
   background: #111;
-  height: 100vh;
+  height: 980px;
   position: relative;
 }
 
@@ -343,91 +387,121 @@
   grid-column-gap: 100px;
   color: #fff;
   align-items: center;
-  height: 100vh;
-  max-width: 1280px;
+  height: 100%;
+  max-width: 1140px;
   margin: 0 auto;
   align-content: center;
 }
 
 .sectionThree>section>div:first-child {
   text-align: left;
-  position: relative;
 }
 
 .sectionThree>section>div h2 {
-  margin: 0 0 20px 0;
-  display: block;
+  font-size: 80px;
+  line-height: 66px;
+  letter-spacing: -3px;
+  margin: 0 0 16px 0;
   z-index: 1;
   position: relative;
+  width: 457px;
+  height: 175px;
 }
 
 .sectionThree>section>div .blueLine {
   content: '';
-  height: 2px;
-  background: blue;
-  width: 50%;
+  height: 4px;
+  background: #5CD0FE;
+  width: 242px;
   display: block;
-  border: 2px solid #5CD0FE;
-  margin: 30px 0 20px;
+  margin: 0 0 20px;
   z-index: 1;
   position: relative;
 }
 
 .sectionThree>section>div p {
   font-size: 18px;
-  line-height: 28px;
-  opacity: .75;
-  padding-right: 25%;
+  line-height: 30px;
+  color: #ccc;
   font-weight: 400;
+  position: relative;
+  width: 359px;
+  margin: 0;
 }
 
 .sectionThree>section>div:last-child {
-  margin: 0 auto;
+  margin-left: auto;
 }
 
 .sectionThree .backgroundTitle {
   font-size: 200px;
-  line-height: 200px;
+  line-height: 156px;
+  letter-spacing: -9.72px;
   font-weight: 800;
   position: absolute;
   width: 100%;
-  color: #fff;
+  color: #232323;
+  text-align: left;
   z-index: 1;
-  opacity: .1;
-  top: -25%;
-  left: -10%;
+  left: 414px;
+  top: 161px;
 }
 
 .sectionThree .oval2 {
   position: absolute;
-  width: 100%;
-  color: #fff;
+  width: 670px;
+  height: 543px;
   z-index: 0;
-  top: -40%;
-  left: -20%;
+  top: 186px;
+  left: 361px;
 }
 
 .sectionThree div.person1 {
-  width: 550px;
+  width: 488px;
   height: 100%;
   position: relative;
 }
 
 /* SECTION FOUR */
 .sectionFour {
-  height: 100vh;
+  height: 1100px;
   position: relative;
+  background: #F9F9F9;
 }
 
 .sectionFour>section {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-column-gap: 100px;
-  align-items: center;
-  height: 100vh;
-  max-width: 1280px;
+  max-width: 1146px;
   margin: 0 auto;
-  align-content: center;
+  padding-top: 164px;
+  align-items: center;
+}
+
+.sectionFour>section>div:first-child .personTitle {
+  position: absolute;
+  bottom: 248px;
+  left: 501px;
+}
+
+.sectionFour>section>div:first-child .personTitle p {
+  margin: 0 0 4px;
+  font-size: 20px;
+  line-height: 26px;
+  color: #111;
+  font-weight: 400;
+  z-index: 2;
+  position: relative;
+}
+
+.sectionFour>section>div:first-child .personTitle h2 {
+  font-size: 90px;
+  line-height: 72px;
+  letter-spacing: -3.75px;
+  color: #111;
+  font-weight: 800;
+  margin: 0;
 }
 
 .sectionFour>section>div h2 {
@@ -439,43 +513,29 @@
 
 .sectionFour .backgroundTitle {
   font-size: 200px;
-  line-height: 200px;
+  line-height: 156px;
+  letter-spacing: -9.72px;
   font-weight: 800;
   position: absolute;
+  left: 1092px;
+  bottom: 537px;
   width: 100%;
   color: #fff;
   z-index: 1;
-  opacity: .25;
-}
-
-.sectionFour>section>div p {
-  font-size: 18px;
-  line-height: 28px;
-  padding-right: 25%;
-  font-weight: 400;
+  opacity: .3;
+  height: 273px;
+  display: grid;
+  align-content: center;
 }
 
 .sectionFour>section>div .blueLine {
   content: '';
-  height: 2px;
-  background: blue;
-  width: 50%;
+  height: 4px;
+  background: #5CD0FE;
+  width: 242px;
   display: block;
-  border: 2px solid #5CD0FE;
   margin: 0;
   z-index: 1;
-  position: relative;
-}
-
-.sectionFour>section>div:first-child>div {
-  position: absolute;
-  bottom: 0;
-  left: 3%;
-}
-
-.sectionFour>section>div:first-child>div p {
-  margin: 0 0 5px 0;
-  z-index: 2;
   position: relative;
 }
 
@@ -487,48 +547,55 @@
 
 .sectionFour .oval3 {
   position: absolute;
-  color: #fff;
   z-index: 1;
-  bottom: 0;
-  width: 160%;
-  height: 150%;
-  left: -27%;
-  bottom: -36%;
-  transform: rotate(7deg);
+  left: 421px;
+  width: 510px;
+  height: 342px;
+  bottom: 164px;
 }
 
 .sectionFour>section>div:first-child .rectangleLines {
   position: absolute;
-  bottom: 200px;
-  width: 450px;
-  height: 184px;
-  right: -70%;
-  bottom: -23%;
+  left: 560px;
+  width: 469px;
+  height: 185px;
   z-index: 1;
+  bottom: 215px;
 }
 
 .sectionFour .oval4 {
   position: absolute;
-  width: 150%;
-  height: 160%;
-  color: #fff;
+  left: 908px;
+  width: 727px;
+  height: 602px;
   z-index: 0;
-  bottom: -23%;
-  left: -45%;
-}
-
-.sectionFour>section>div:last-child {
-  position: relative;
+  bottom: 300px;
 }
 
 .sectionFour>section>div:last-child p {
   position: relative;
   z-index: 1;
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 400;
+  color: #000;
+  max-width: 350px;
+  margin: 0;
 }
 
 .sectionFour>section>div:last-child h2 {
+  font-size: 80px;
+  line-height: 58px;
   position: relative;
   z-index: 2;
+  letter-spacing: -4px;
+  color: #000;
+  width: 315px;
+  font-weight: 800;
+  margin: 0 0 8px;
+  height: 167px;
+  display: grid;
+  align-content: center;
 }
 
 .sectionFour .person2 {
@@ -538,15 +605,15 @@
 
 .sectionFour>section>div:last-child .rectangleLines {
   position: absolute;
-  bottom: 200px;
-  width: 450px;
-  height: 184px;
+  left: 805px;
+  width: 469px;
+  height: 185px;
   z-index: 1;
-  left: -55%;
+  bottom: 602px;
 }
 
 .sectionFour div.person2 {
-  width: 550px;
+  width: 553px;
   height: 100%;
   position: relative;
 }
@@ -556,30 +623,34 @@
 .sectionFive {
   background: #111;
   color: #fff;
-  padding: 250px 0;
+  height: 1161px;
   text-align: center;
-}
-
-.sectionFive>section {
+  display: grid;
+  padding-top: 279px;
   position: relative;
 }
 
 .sectionFive .backgroundTitle {
   font-size: 200px;
-  line-height: 200px;
+  line-height: 156px;
+  letter-spacing: -9.72px;
   font-weight: 800;
   position: absolute;
   width: 100%;
-  color: #fff;
-  z-index: 1;
-  opacity: .1;
+  color: #222;
+  z-index: 0;
   left: 0;
-  top: -7.5%;
+  height: 273px;
+  display: grid;
+  align-items: center;
+  top: 164px;
 }
 
 .sectionFive h2 {
-  margin: 0 0 20px 0;
-  display: block;
+  font-size: 80px;
+  line-height: 109px;
+  letter-spacing: -4px;
+  margin: 0;
   z-index: 1;
   position: relative;
 }
@@ -587,18 +658,19 @@
 .sectionFive p {
   font-size: 18px;
   line-height: 28px;
-  opacity: .75;
+  color: #ccc;
   font-weight: 400;
+  position: relative;
+  margin: 0 0 32px 0;
 }
 
 .sectionFive .blueLine:nth-child(3) {
   content: '';
-  height: 2px;
-  background: blue;
-  width: 450px;
+  height: 4px;
+  background: #5CD0FE;
+  width: 350px;
   display: block;
-  border: 2px solid #5CD0FE;
-  margin: 0 auto 30px;
+  margin: 0 auto 17px;
   z-index: 1;
   position: relative;
 }
@@ -606,48 +678,55 @@
 .sectionFive .blueLine:nth-child(10) {
   content: '';
   height: 2px;
-  background: blue;
-  width: 150px;
+  background: #5CD0FE;
+  width: 140px;
   display: block;
-  border: 1px solid #5CD0FE;
-  margin: 20px auto 30px;
+  margin: 0 auto 40px;
   z-index: 1;
   position: relative;
 }
 
 .sectionFive .subscribeInput {
-  margin-top: 40px;
   display: inline-flex;
   justify-content: center;
   position: relative;
+  margin-bottom: 100px;
 }
 
 .sectionFive .subscribeInput input::placeholder {
-  font-size: 16px;
-  font-weight: 500;
+  font-size: 15px;
+  line-height: 20px;
+  font-weight: 400;
+  color: #999;
 }
 
 .sectionFive .subscribeInput input {
   border: none;
-  border-top-left-radius: 5px;
-  border-bottom-left-radius: 5px;
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
   font-family: 'Open Sans', sans-serif;
   box-sizing: border-box;
-  padding: 20px 50px;
+  height: 60px;
+  width: 256px;
   outline: none;
-  font-size: 16px;
+  font-size: 15px;
+  line-height: 20px;
   font-weight: 500;
+  padding-left: 56px;
 }
 
 .sectionFive .subscribeInput button {
   border: none;
-  border-top-right-radius: 5px;
-  border-bottom-right-radius: 5px;
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
   font-family: 'Open Sans', sans-serif;
-  font-size: 16px;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: 1px;
   font-weight: 700;
   box-sizing: border-box;
-  padding: 20px 50px;
+  width: 130px;
+  height: 60px;
   background: #5CD0FE;
   text-transform: uppercase;
 }
@@ -664,29 +743,43 @@
 
 .sectionFive .divider {
   content: '';
-  height: 2px;
-  background: blue;
-  width: 850px;
+  height: 1px;
+  background: #222;
+  width: 800px;
   display: block;
-  border: 1px solid #333;
-  margin: 100px auto 100px;
+  margin: 0 auto 100px;
   z-index: 1;
   position: relative;
 }
 
+.sectionFive .ValtechLogoWhite {
+  height: 40px;
+  width: 190px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+
 .sectionFive .episodeFilter {
-  margin-bottom: 100px;
+  margin-bottom: 96px;
 }
 
 .sectionFive .episodeFilter a {
   font-weight: 700;
   text-transform: uppercase;
-  font-size: 16px;
-  letter-spacing: 1.5px;
+  font-size: 15px;
+  line-height: 28px;
+  letter-spacing: 2.5px;
 }
 
 .sectionFive .episodeFilter a:not(:last-child) {
-  padding-right: 20px;
+  padding-right: 68px;
+}
+
+.sectionFive .copyrightText {
+  font-size: 16px;
+  line-height: 28px;
+  color: #ccc;
+  margin: 0;
 }
 
 /* MEDIA QUERIES */
@@ -713,57 +806,30 @@
 
   .container .ValtechLogoBlackContainer {
     height: 40px;
-    margin: 0 auto;
   }
 
   .container .backgroundTitle {
-    font-size: 75px;
-    font-weight: 800;
-    position: absolute;
-    top: 17.5%;
-    width: 100%;
-    color: #000;
-    z-index: 0;
-    opacity: .1;
-    margin-bottom: 5%;
-    display: none;
+    font-size: 20vw;
+    top: 20%;
   }
 
   .container .title {
     font-size: 35px;
-    margin: 0 0 20px 0;
-    display: block;
-    text-transform: capitalize;
-    font-weight: 300;
-    z-index: 1;
-    position: relative;
   }
 
   .container .blueLine {
-    content: '';
-    height: 2px;
-    background: blue;
     width: 125px;
-    display: block;
-    border: 2px solid #5CD0FE;
-    margin: 15px auto 0;
-    z-index: 1;
-    position: relative;
   }
 
   .container .rectangleLines {
     display: none;
   }
 
-  /* FIX THIS LATER! */
   .oval {
-    position: absolute;
-    bottom: 0;
-    right: -20%;
+    bottom: -60%;
+    right: -90%;
     width: 450px;
-    height: 100%;
-    opacity: .8;
-    display: none;
+    transform: rotate(270deg);
   }
 
   /* SECTION 2 */
@@ -775,40 +841,20 @@
   .sectionTwo .title {
     font-size: 50px;
     line-height: 50px;
-    margin: 0 0 20px 0;
-    display: block;
-    text-transform: capitalize;
-    font-weight: 800;
-    z-index: 1;
-    position: relative;
     text-align: left;
     padding: 0 20px;
   }
 
   .sectionTwo .backgroundTitle {
-    font-size: 65px;
-    font-weight: 800;
-    position: absolute;
+    font-size: 20vw;
     top: 0;
-    width: 100%;
-    color: #000;
-    z-index: 0;
-    opacity: .1;
     text-transform: capitalize;
-    left: -4%;
-    display: none;
+    left: -5%;
   }
 
   .sectionTwo .blueLine {
-    content: '';
-    height: 2px;
-    background: blue;
     width: 200px;
-    display: block;
-    border: 2px solid #5CD0FE;
     margin: 10px 20px;
-    z-index: 1;
-    position: relative;
   }
 
   .sectionTwo .episodeFilter {
@@ -851,75 +897,36 @@
   /* SECTION 3 */
 
   .sectionThree {
-    background: #111;
     height: auto;
-    position: relative;
   }
 
   .sectionThree>section {
     display: block;
-    color: #fff;
-    align-items: center;
     height: auto;
-    margin: 0 auto;
     padding: 50px 0;
-  }
-
-  .sectionThree>section>div:first-child {
-    text-align: left;
-    position: relative;
   }
 
   .sectionThree>section>div h2 {
     font-size: 50px;
     line-height: 50px;
-    margin: 0 0 20px 0;
-    display: block;
-    text-transform: capitalize;
-    font-weight: 800;
-    z-index: 1;
-    position: relative;
     padding: 20px;
   }
 
   .sectionThree>section>div .blueLine {
-    content: '';
-    height: 2px;
-    background: blue;
-    width: 50%;
-    display: block;
-    border: 2px solid #5CD0FE;
     margin: 30px 20px 20px;
-    z-index: 1;
-    position: relative;
   }
 
   .sectionThree>section>div p {
-    font-size: 18px;
-    line-height: 28px;
-    opacity: .75;
-    padding-right: 25%;
-    font-weight: 400;
     padding: 0 20px;
   }
 
-  .sectionThree>section>div:last-child {
-    margin: 0 auto;
-  }
-
   .sectionThree .backgroundTitle {
-    font-size: 65px;
-    line-height: 65px;
-    font-weight: 800;
-    position: absolute;
-    width: 100%;
-    color: #fff;
-    z-index: 1;
-    opacity: .1;
+    font-size: 20vw;
+    line-height: 20vw;
+    top: 20%;
     top: 0;
     left: 0;
     padding: 20px;
-    display: none;
   }
 
   .sectionThree .oval2 {
@@ -1245,7 +1252,15 @@
   }
 
   /* MENU */
-  .noWayThisGonWork .logoArea > div { max-height: 20px; }
-  .noWayThisGonWork .logoArea .blueLine { width: 75px; }
-  .noWayThisGonWork .logoArea h3 { font-size: 18px; }
+  .noWayThisGonWork .logoArea>div {
+    max-height: 20px;
+  }
+
+  .noWayThisGonWork .logoArea .blueLine {
+    width: 75px;
+  }
+
+  .noWayThisGonWork .logoArea h3 {
+    font-size: 18px;
+  }
 }
