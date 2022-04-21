@@ -1,3 +1,94 @@
+/* TITLES */
+.titleLarge {
+  font-size: 100px;
+  line-height: 100px;
+  text-transform: capitalize;
+  font-weight: 800;
+}
+
+/* MENU */
+
+.noWayThisGonWork {
+  position: fixed;
+  background: #000;
+  width: 100%;
+  height: 100%;
+  z-index: 999;
+}
+
+.noWayThisGonWork .menuBtn {
+  color: #fff;
+}
+
+.noWayThisGonWork .menuItems {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.noWayThisGonWork .menuItems a {
+  color: #fff;
+  font-size: 30px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.noWayThisGonWork .menuItems a:not(:last-child) {
+  margin-bottom: 40px;
+}
+
+.noWayThisGonWork .logoArea {
+  position: absolute;
+  margin: 0 auto;
+  text-align: center;
+  width: 100%;
+  top: 40px;
+}
+
+.noWayThisGonWork .logoArea .blueLine {
+  content: '';
+  height: 2px;
+  background: blue;
+  width: 150px;
+  display: block;
+  border: 1px solid #5CD0FE;
+  margin: 15px auto 0;
+  z-index: 1;
+  position: relative;
+}
+
+.noWayThisGonWork .logoArea h3 {
+  font-size: 30px;
+  margin: 10px 0 20px 0;
+  display: block;
+  text-transform: capitalize;
+  font-weight: 300;
+  z-index: 1;
+  position: relative;
+  text-align: center;
+  color: #fff;
+}
+
+.menuBtn {
+  position: absolute;
+  top: 40px;
+  left: 40px;
+  font-size: 20px;
+  transition: .3s;
+  z-index: 1;
+}
+
+.menuBtn:hover {
+  cursor: pointer;
+  transform: scale(1.2);
+  transition: .3s;
+}
+
+/* MAIN */
+
 .mobileOnly {
   display: none;
 }
@@ -33,13 +124,6 @@
   z-index: 1;
   position: relative;
   font-weight: 600;
-}
-
-.menuBtn {
-  position: absolute;
-  top: 40px;
-  left: 40px;
-  font-size: 20px;
 }
 
 .scrollIcons {
@@ -137,11 +221,8 @@
 }
 
 .sectionTwo .title {
-  font-size: 100px;
   margin: 0 0 20px 0;
   display: block;
-  text-transform: capitalize;
-  font-weight: 800;
   z-index: 1;
   position: relative;
 }
@@ -265,6 +346,7 @@
   height: 100vh;
   max-width: 1280px;
   margin: 0 auto;
+  align-content: center;
 }
 
 .sectionThree>section>div:first-child {
@@ -273,12 +355,8 @@
 }
 
 .sectionThree>section>div h2 {
-  font-size: 100px;
-  line-height: 100px;
   margin: 0 0 20px 0;
   display: block;
-  text-transform: capitalize;
-  font-weight: 800;
   z-index: 1;
   position: relative;
 }
@@ -349,15 +427,12 @@
   height: 100vh;
   max-width: 1280px;
   margin: 0 auto;
+  align-content: center;
 }
 
 .sectionFour>section>div h2 {
-  font-size: 100px;
-  line-height: 100px;
   margin: 0 0 20px 0;
   display: block;
-  text-transform: capitalize;
-  font-weight: 800;
   z-index: 1;
   position: relative;
 }
@@ -394,7 +469,7 @@
 
 .sectionFour>section>div:first-child>div {
   position: absolute;
-  bottom: 15%;
+  bottom: 0;
   left: 3%;
 }
 
@@ -503,12 +578,8 @@
 }
 
 .sectionFive h2 {
-  font-size: 100px;
-  line-height: 100px;
   margin: 0 0 20px 0;
   display: block;
-  text-transform: capitalize;
-  font-weight: 800;
   z-index: 1;
   position: relative;
 }
@@ -620,7 +691,7 @@
 
 /* MEDIA QUERIES */
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 600px) {
   .mobileOnly {
     display: block;
   }
@@ -857,12 +928,12 @@
 
   .sectionThree div.person1 {
     width: auto !important;
-    height: 450px;
+    height: 100%;
     position: relative;
     margin: 20px !important;
   }
 
-  /* SECTION FOUR */
+  /* SECTION 4 */
   .sectionFour {
     height: auto;
     position: relative;
@@ -876,6 +947,7 @@
     height: auto;
     max-width: 100%;
     margin: 0 auto;
+    padding-bottom: 50px;
   }
 
   .sectionFour>section>div h2 {
@@ -890,15 +962,14 @@
   }
 
   .sectionFour .backgroundTitle {
-    font-size: 75px;
-    line-height: 75px;
+    font-size: 100px;
+    line-height: 100px;
     font-weight: 800;
     position: absolute;
     width: 100%;
     color: #fff;
     z-index: 1;
     opacity: .25;
-    display: none;
   }
 
   .sectionFour>section>div p {
@@ -927,7 +998,6 @@
     left: 3%;
     padding: 20px;
     width: 100%;
-    display: none;
   }
 
   .sectionFour>section>div:first-child>div p {
@@ -953,7 +1023,6 @@
     left: -22%;
     bottom: -13%;
     transform: rotate(1deg);
-    display: none;
   }
 
   .sectionFour>section>div:first-child .rectangleLines {
@@ -962,9 +1031,8 @@
     width: 450px;
     height: 184px;
     right: -70%;
-    bottom: -23%;
+    bottom: -10%;
     z-index: 1;
-    display: none;
   }
 
   .sectionFour .oval4 {
@@ -976,16 +1044,14 @@
     bottom: -23%;
     left: -45%;
     display: none;
-    display: none;
   }
 
   .sectionFour .oval5 {
     width: 170%;
-    height: 350%;
+    height: auto;
     position: absolute;
-    top: -104%;
-    left: -30%;
-    display: none;
+    top: -150px;
+    left: -35%;
   }
 
   .sectionFour>section>div:last-child {
@@ -1015,7 +1081,6 @@
     z-index: 1;
     left: -100%;
     bottom: -20%;
-    display: none;
   }
 
   .sectionFour div.person2 {
@@ -1178,4 +1243,9 @@
   .sectionFive .copyrightText {
     text-align: center;
   }
+
+  /* MENU */
+  .noWayThisGonWork .logoArea > div { max-height: 20px; }
+  .noWayThisGonWork .logoArea .blueLine { width: 75px; }
+  .noWayThisGonWork .logoArea h3 { font-size: 18px; }
 }
