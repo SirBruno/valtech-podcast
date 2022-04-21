@@ -5,9 +5,10 @@ import { faComputerMouse, faAngleDown, faBars, faX } from '@fortawesome/free-sol
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import styles from '../../../styles/Home.module.css'
 import rectangleLines from '../../../public/rectangle_lines.svg'
-import ValtechLogoBlack from '../../../public/valtech_logo_black.png'
+import ValtechLogoBlack from '../../../public/valtech_logo_black.svg'
 import ValtechLogoWhite from '../../../public/ValtechLogoWhite.png'
 import oval from '../../../public/oval.svg'
+import oval6 from '../../../public/oval6.svg'
 
 function SectionOne() {
 
@@ -42,17 +43,20 @@ function SectionOne() {
         <title>Valtech Podcast</title>
       </Head>
       <FontAwesomeIcon className={styles.menuBtn} icon={faBars} onClick={handleClick} />
+      <div className={styles.oval6}>
+        <Image src={oval6} alt="design element" quality="100" layout='responsive' objectFit='contain' />
+      </div>
       <main className={styles.main}>
         <span className={styles.backgroundTitle}>Podcast</span>
         <div className={styles.rectangleLines}>
-          <Image src={rectangleLines} alt="design element" quality="100" layout='fill' objectFit='contain' />
+          <Image src={rectangleLines} alt="design element" quality="100" layout='responsive' objectFit='contain' />
         </div>
         <div className={styles.oval}>
-          <Image src={oval} alt="design element" quality="100" layout='fill' objectFit='contain' />
+          <Image src={oval} alt="design element" quality="100" layout='responsive' objectFit='contain' />
         </div>
         <div>
-          <div className={styles.ValtechLogoBlackContainer}>
-            <Image className={styles.ValtechLogoBlack} src={ValtechLogoBlack} alt="Valtech logo" quality="100" layout='fill' objectFit='contain' />
+          <div className={`${styles.ValtechLogoBlackContainer} ${styles.ValtechLogoBlack}`}>
+            <Image src={ValtechLogoBlack} alt="Valtech logo" quality="100" layout='responsive' objectFit='contain' />
           </div>
           <span className={styles.blueLine}></span>
           <h1 className={styles.title}>The podcast</h1>
